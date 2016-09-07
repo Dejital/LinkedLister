@@ -162,7 +162,10 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\ILinkedListProcessor.cs" />
     <Compile Include="Models\LinkedList.cs" />
+    <Compile Include="Models\LinkedListProcessor.cs" />
+    <Compile Include="Models\LinkedListResult.cs" />
     <Compile Include="Models\Node.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

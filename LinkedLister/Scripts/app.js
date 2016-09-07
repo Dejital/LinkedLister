@@ -30,8 +30,11 @@ angular.module('linkedlister', ['ngRoute'])
             var data = [vm.listOne, vm.listTwo];
             var res = $http.post('/api/LinkedList', data);
             res.success(function(data, status, headers, config) {
-                $scope.listOne = data[0];
-                $scope.listTwo = data[1];
+                debugger;
+                $scope.listOne = data.InputLinkedLists[0];
+                $scope.listTwo = data.InputLinkedLists[1];
+                $scope.sortedList = data.SortedList;
+                $scope.conflicts = data.Conflicts;
             });
         }
 

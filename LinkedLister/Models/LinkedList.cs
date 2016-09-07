@@ -4,11 +4,10 @@ namespace LinkedLister.Models
 {
     public class LinkedList
     {
-        public LinkedList()
+        public LinkedList(ICollection<Node> nodes)
         {
-            Nodes = new List<Node>();
+            Nodes = nodes;
         }
-
         public ICollection<Node> Nodes { get; set; }
     }
 }
