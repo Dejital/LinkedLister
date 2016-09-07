@@ -1,0 +1,29 @@
+{
+  "siteName": {
+    "value": "Linked-Lister"
+  },
+  "hostingPlanName": {
+    "value": "ServicePlanada31773-ba7e"
+  },
+  "siteLocation": {
+    "value": "South Central US"
+  },
+  "sku": {
+    "value": "Standard"
+  },
+  "workerSize": {
+    "value": "0"
+  },
+  "siteMode": {
+    "value": "Limited"
+  },
+  "computeMode": {
+    "value": "0"
+  },
+  "subscriptionId": {
+    "value": "680b7b0f-dfb4-4ed3-923c-d1d0fb38901c"
+  },
+  "resourceGroup": {
+    "value": "Default"
+  }
+}

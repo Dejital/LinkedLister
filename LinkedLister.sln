@@ -5,6 +5,19 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinkedLister", "LinkedLister\LinkedLister.csproj", "{CA6919E3-7527-4BD7-9A82-0CF55A705798}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PublishScripts", "PublishScripts", "{951E9E9C-0152-40A3-9139-7A70D9E06234}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Scripts", "Scripts", "{0C248D8F-540F-4219-805F-CEA179ECC3B2}"
+	ProjectSection(SolutionItems) = preProject
+		PublishScripts\Scripts\Deploy-AzureResourceGroup.ps1 = PublishScripts\Scripts\Deploy-AzureResourceGroup.ps1
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Templates", "Templates", "{1C857FD9-03F9-43E0-88DD-5F6D3FD27031}"
+	ProjectSection(SolutionItems) = preProject
+		PublishScripts\Templates\LinkedLister.json = PublishScripts\Templates\LinkedLister.json
+		PublishScripts\Templates\LinkedLister.param.dev.json = PublishScripts\Templates\LinkedLister.param.dev.json
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +31,9 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{0C248D8F-540F-4219-805F-CEA179ECC3B2} = {951E9E9C-0152-40A3-9139-7A70D9E06234}
+		{1C857FD9-03F9-43E0-88DD-5F6D3FD27031} = {951E9E9C-0152-40A3-9139-7A70D9E06234}
 	EndGlobalSection
 EndGlobal
