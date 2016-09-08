@@ -15,7 +15,7 @@ angular.module('linkedlister', ['ngRoute'])
             });
 
     })
-    .controller('LinkedListCtrl', function LinkedListCtrl($scope, $http) {
+    .controller('LinkedListCtrl', ['$scope', '$http', function LinkedListCtrl($scope, $http) {
 
         var vm = $scope;
 
@@ -29,8 +29,7 @@ angular.module('linkedlister', ['ngRoute'])
         $scope.submitLists = function() {
             var data = [vm.listOne, vm.listTwo];
             var res = $http.post('/api/LinkedList', data);
-            res.success(function(data, status, headers, config) {
-                debugger;
+            res.success(function(data) {
                 $scope.listOne = data.InputLinkedLists[0];
                 $scope.listTwo = data.InputLinkedLists[1];
                 $scope.sortedList = data.SortedList;
@@ -48,4 +47,4 @@ angular.module('linkedlister', ['ngRoute'])
             list.Nodes.splice(index, 1);
         }
 
-    });
+    }]);
