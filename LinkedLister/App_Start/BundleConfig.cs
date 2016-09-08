@@ -24,12 +24,14 @@ namespace LinkedLister
                       "~/Content/bootstrap.css",
                       "~/Content/site.css"));
 
-            bundles.Add(new ScriptBundle("~/bundles/app").Include(
+            var appBundle = new ScriptBundle("~/bundles/app").Include(
                 "~/Scripts/angular.min.js",
                 "~/Scripts/angular-route.min.js",
                 "~/Scripts/angular-resource.min.js",
-                "~/Scripts/app.js"));
+                "~/Scripts/app.js");
+            appBundle.Transforms.Clear();
 
+            bundles.Add(appBundle);
         }
     }
 }
